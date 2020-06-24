@@ -1,0 +1,21 @@
+
+EEEEEEEEEEEEEEEEEEEEEE                                                    kkkkkkkk
+E::::::::::::::::::::E                                                    k::::::k
+E::::::::::::::::::::E                                                    k::::::k
+EE::::::EEEEEEEEE::::E                                                    k::::::k
+  E:::::E       EEEEEuuuuuu    uuuuuurrrrr   rrrrrrrrr      eeeeeeeeeeee   k:::::k    kkkkkkaaaaaaaaaaaaa
+  E:::::E            u::::u    u::::ur::::rrr:::::::::r   ee::::::::::::ee k:::::k   k:::::ka::::::::::::a
+  E::::::EEEEEEEEEE  u::::u    u::::ur:::::::::::::::::r e::::::eeeee:::::ek:::::k  k:::::k aaaaaaaaa:::::a
+  E:::::::::::::::E  u::::u    u::::urr::::::rrrrr::::::e::::::e     e:::::k:::::k k:::::k           a::::a
+  E:::::::::::::::E  u::::u    u::::u r:::::r     r:::::e:::::::eeeee::::::k::::::k:::::k     aaaaaaa:::::a
+  E::::::EEEEEEEEEE  u::::u    u::::u r:::::r     rrrrrre:::::::::::::::::ek:::::::::::k    aa::::::::::::a
+  E:::::E            u::::u    u::::u r:::::r           e::::::eeeeeeeeeee k:::::::::::k   a::::aaaa::::::a
+  E:::::E       EEEEEu:::::uuuu:::::u r:::::r           e:::::::e          k::::::k:::::k a::::a    a:::::a
+EE::::::EEEEEEEE:::::u:::::::::::::::ur:::::r           e::::::::e        k::::::k k:::::ka::::a    a:::::a
+E::::::::::::::::::::Eu:::::::::::::::r:::::r            e::::::::eeeeeeeek::::::k  k:::::a:::::aaaa::::::a
+E::::::::::::::::::::E uu::::::::uu:::r:::::r             ee:::::::::::::ek::::::k   k:::::a::::::::::aa:::a
+EEEEEEEEEEEEEEEEEEEEEE   uuuuuuuu  uuurrrrrrr               eeeeeeeeeeeeeekkkkkkkk    kkkkkkaaaaaaaaaa  aaaa
+
+
+-> Spring Boot version: ${spring-boot.formatted-version} <-
+Powered By KenyoDarz.
