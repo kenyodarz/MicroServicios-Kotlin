@@ -1,4 +1,4 @@
-package com.cdm.musuarios.utils
+package com.cdm.mcommons.services
 
 import org.springframework.data.jpa.repository.JpaRepository
 import java.io.Serializable

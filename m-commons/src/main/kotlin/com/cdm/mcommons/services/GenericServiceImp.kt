@@ -1,4 +1,4 @@
-package com.cdm.musuarios.utils
+package com.cdm.mcommons.services
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Service
@@ -6,7 +6,7 @@ import java.io.Serializable
 import java.util.function.Consumer
 
 @Service
-abstract class GenericServiceImp<T, ID : Serializable> : GenericServiceAPI <T, ID> {
+abstract class GenericServiceImp<T, ID : Serializable> : GenericServiceAPI<T, ID> {
 
     override fun save(entity: T): T {
         return getRepository().save(entity)

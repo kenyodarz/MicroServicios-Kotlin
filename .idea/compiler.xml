@@ -9,9 +9,13 @@
         <module name="m-eureka" />
         <module name="m-zuul" />
         <module name="m-usuarios" />
+        <module name="m-commons" />
+        <module name="c-alumnos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="c-alumnos" target="11" />
+      <module name="m-commons" target="11" />
       <module name="m-eureka" target="1.8" />
       <module name="m-usuarios" target="1.8" />
       <module name="m-zuul" target="1.8" />
@@ -22,6 +26,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="c-alumnos" options="-parameters" />
+      <module name="m-commons" options="-parameters" />
       <module name="m-eureka" options="-parameters" />
       <module name="m-usuarios" options="-parameters" />
       <module name="m-zuul" options="-parameters" />

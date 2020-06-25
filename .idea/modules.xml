@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/c-alumnos/c-alumnos.iml" filepath="$PROJECT_DIR$/c-alumnos/c-alumnos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m-commons/m-commons.iml" filepath="$PROJECT_DIR$/m-commons/m-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-eureka/m-eureka.iml" filepath="$PROJECT_DIR$/m-eureka/m-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-usuarios/m-usuarios.iml" filepath="$PROJECT_DIR$/m-usuarios/m-usuarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-zuul/m-zuul.iml" filepath="$PROJECT_DIR$/m-zuul/m-zuul.iml" />
