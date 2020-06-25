@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class ExamenRestController: GenericRestController<Examen, Long, ExamenServiceApi>() {
 
-    @PutMapping("/{id}")
+    @PutMapping("/edit/{id}")
     fun edit(@RequestBody examen: Examen, @PathVariable id:Long): ResponseEntity<Any>{
         var optionalExamen: Examen = serviceAPI!!.getT(id) ?: return ResponseEntity.notFound().build()
 
@@ -23,7 +23,7 @@ class ExamenRestController: GenericRestController<Examen, Long, ExamenServiceApi
         optionalExamen.preguntas!!
                 .stream()
                 .filter { pregunta: Pregunta? -> !examen.preguntas!!.contains(pregunta) }
-                .forEach {optionalExamen::removePregunta}
+                .forEach(optionalExamen::removePreguntas)
         optionalExamen.preguntas = examen.preguntas
         return ResponseEntity.status(HttpStatus.CREATED).body(serviceAPI!!.save(optionalExamen))
     }

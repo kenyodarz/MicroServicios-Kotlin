@@ -37,18 +37,14 @@ class Alumno {
     }
 
     fun getFotoHashCode(): Int? {
-        return if (foto != null) {this.foto.hashCode()} else null
+        return this.foto.hashCode()
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other !is Alumno) return false
 
-    override fun equals(obj: Any?): Boolean {
-        if (this === obj) {
-            return true
-        }
-        if (obj !is Alumno) {
-            return false
-        }
-        return idAlumnos != null && idAlumnos == obj.idAlumnos
+        return idAlumnos != null && idAlumnos == other.idAlumnos
     }
 
 }
