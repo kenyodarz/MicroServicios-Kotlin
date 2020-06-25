@@ -30,7 +30,7 @@ open class GenericRestController<T, ID: Serializable, S : GenericServiceAPI<T,ID
     }
 
     @GetMapping("/delete/{id}")
-    fun delete(@RequestParam id: ID): ResponseEntity<T>{
+    fun delete(@PathVariable id: ID): ResponseEntity<T>{
         val entity: T? = serviceAPI!!.getT(id)
         if (entity != null){
             serviceAPI!!.delete(id)

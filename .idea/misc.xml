@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/m-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/c-alumnos/pom.xml" />
         <option value="$PROJECT_DIR$/m-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/m-cursos/pom.xml" />
+        <option value="$PROJECT_DIR$/m-examenes/pom.xml" />
       </list>
     </option>
   </component>

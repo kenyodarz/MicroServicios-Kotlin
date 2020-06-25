@@ -28,7 +28,7 @@ class AlumnoRestController : GenericRestController<Alumno, Long, AlumnoServiceAp
         return ResponseEntity((serviceAPI!!.findByNombreOrApellido(term)), HttpStatus.OK)
     }
 
-    @GetMapping("/uploads/img/{id]")
+    @GetMapping("/uploads/img/{id}")
     fun viewPhoto(@PathVariable id: Long): ResponseEntity<Any> {
 
         val alumno: Alumno? = serviceAPI!!.getT(id)
