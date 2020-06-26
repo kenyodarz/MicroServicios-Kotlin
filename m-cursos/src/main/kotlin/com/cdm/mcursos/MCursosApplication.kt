@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 
+@EnableFeignClients
 @EnableEurekaClient
 @SpringBootApplication
 @EntityScan("com.cdm.calumnos.models","com.cdm.mcursos.models","com.cdm.cexamenes.models")
