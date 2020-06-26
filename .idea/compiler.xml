@@ -40,6 +40,7 @@
       <module name="m-cursos" options="-parameters" />
       <module name="m-eureka" options="-parameters" />
       <module name="m-examenes" options="-parameters" />
+      <module name="m-respuestas" options="-parameters" />
       <module name="m-usuarios" options="-parameters" />
       <module name="m-zuul" options="-parameters" />
     </option>
