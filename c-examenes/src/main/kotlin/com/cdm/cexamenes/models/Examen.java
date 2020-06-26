@@ -1,9 +1,11 @@
-package com.cdm.mexamenes.models;
+package com.cdm.cexamenes.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -18,7 +20,8 @@ public class Examen {
     private Long idExamen;
 
     @Column
-    @NotNull
+    @NotEmpty
+    @Size(min=4, max=30)
     private String nombre;
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -29,9 +32,9 @@ public class Examen {
     @OneToMany(mappedBy = "examen",fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Pregunta> preguntas;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @NotNull
-//    private Asignatura asignatura;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @NotNull
+    private Asignatura asignatura;
 
     public Examen() {
         this.preguntas = new ArrayList<>();
@@ -70,9 +73,9 @@ public class Examen {
         return preguntas;
     }
 
-//    public Asignatura getAsignatura() { return asignatura; }
-//
-//    public void setAsignatura(Asignatura asignatura) { this.asignatura = asignatura; }
+    public Asignatura getAsignatura() { return asignatura; }
+
+    public void setAsignatura(Asignatura asignatura) { this.asignatura = asignatura; }
 
     public void setPreguntas(List<Pregunta> preguntas) {
         this.preguntas.clear();

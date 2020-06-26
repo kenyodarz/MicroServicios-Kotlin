@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 
 @EnableEurekaClient
 @SpringBootApplication
-@EntityScan("com.cdm.calumnos.models","com.cdm.mcursos.models")
+@EntityScan("com.cdm.calumnos.models","com.cdm.mcursos.models","com.cdm.cexamenes.models")
 class MCursosApplication
 
 fun main(args: Array<String>) {

@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/c-alumnos/src/main/kotlin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/c-alumnos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/c-examenes/src/main/kotlin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/c-examenes/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-commons/src/main/kotlin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-cursos/src/main/kotlin" charset="UTF-8" />
@@ -11,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/m-eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-examenes/src/main/kotlin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-examenes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/m-respuestas/src/main/kotlin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/m-respuestas/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-usuarios/src/main/kotlin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-zuul/src/main/kotlin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/m-zuul/src/main/resources" charset="UTF-8" />

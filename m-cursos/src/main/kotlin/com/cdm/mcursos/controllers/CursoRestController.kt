@@ -1,6 +1,7 @@
 package com.cdm.mcursos.controllers
 
 import com.cdm.calumnos.models.Alumno
+import com.cdm.cexamenes.models.Examen
 import com.cdm.mcommons.controllers.GenericRestController
 import com.cdm.mcursos.models.Curso
 import com.cdm.mcursos.services.CursoServiceApi
@@ -30,5 +31,20 @@ class CursoRestController: GenericRestController<Curso, Long, CursoServiceApi>()
     fun buscarAlumnoPorId(@PathVariable id:Long) : ResponseEntity<Any>{
         val curso: Curso = serviceAPI!!.findCursoByAlumnoId(id)
         return ResponseEntity.ok(curso)
+    }
+
+    @PutMapping("/{id}/asignar-examenes")
+    fun asignarExamenes(@RequestBody examenes: List<Examen>, @PathVariable id: Long): ResponseEntity<Any>{
+
+        val curso: Curso = serviceAPI!!.getT(id) ?: return ResponseEntity.notFound().build()
+        examenes.forEach(curso::addExamen)
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(this.serviceAPI!!.save(curso))
+    }
+
+    @PutMapping("/{id}/eliminar-examenes")
+    fun eliminarExamen(@RequestBody examen: Examen, @PathVariable id: Long): ResponseEntity<Any>{
+        val curso: Curso = serviceAPI!!.getT(id) ?: return ResponseEntity.notFound().build()
+        curso.removeExamen(examen)
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(serviceAPI!!.save(curso))
     }
 }

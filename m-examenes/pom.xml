@@ -23,6 +23,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.cdm</groupId>
+			<artifactId>c-examenes</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cdm</groupId>
 			<artifactId>m-commons</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

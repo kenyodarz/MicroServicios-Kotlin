@@ -9,33 +9,18 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cdm</groupId>
-	<artifactId>m-cursos</artifactId>
+	<artifactId>m-respuestas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>m-cursos</name>
-	<description>MicroService Cursos</description>
+	<name>m-respuestas</name>
+	<description>Micro Servico Respuestas</description>
 
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.3.72</kotlin.version>
-		<spring-cloud.version>Hoxton.SR5</spring-cloud.version>
+		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.cdm</groupId>
-			<artifactId>c-examenes</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.cdm</groupId>
-			<artifactId>c-alumnos</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.cdm</groupId>
-			<artifactId>m-commons</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

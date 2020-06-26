@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/c-alumnos/c-alumnos.iml" filepath="$PROJECT_DIR$/c-alumnos/c-alumnos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c-examenes/c-examenes.iml" filepath="$PROJECT_DIR$/c-examenes/c-examenes.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-commons/m-commons.iml" filepath="$PROJECT_DIR$/m-commons/m-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-cursos/m-cursos.iml" filepath="$PROJECT_DIR$/m-cursos/m-cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-eureka/m-eureka.iml" filepath="$PROJECT_DIR$/m-eureka/m-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-examenes/m-examenes.iml" filepath="$PROJECT_DIR$/m-examenes/m-examenes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m-respuestas/m-respuestas.iml" filepath="$PROJECT_DIR$/m-respuestas/m-respuestas.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-usuarios/m-usuarios.iml" filepath="$PROJECT_DIR$/m-usuarios/m-usuarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-zuul/m-zuul.iml" filepath="$PROJECT_DIR$/m-zuul/m-zuul.iml" />
     </modules>

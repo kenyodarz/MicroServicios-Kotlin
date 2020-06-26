@@ -8,14 +8,17 @@ import org.springframework.core.io.Resource
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
+import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.multipart.MultipartFile
+import javax.validation.Valid
 
 @RestController
 class AlumnoRestController : GenericRestController<Alumno, Long, AlumnoServiceApi>() {
 
     @PostMapping("/save-with-photo")
-    fun saveWithPhoto(alumno: Alumno, @RequestParam archivo: MultipartFile): ResponseEntity<Alumno> {
+    fun saveWithPhoto(@Valid alumno: Alumno,result: BindingResult ,
+                      @RequestParam archivo: MultipartFile): ResponseEntity<Alumno> {
         if (!archivo.isEmpty) {
             alumno.foto = archivo.bytes
         }
@@ -39,5 +42,22 @@ class AlumnoRestController : GenericRestController<Alumno, Long, AlumnoServiceAp
 
         return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(imagen)
 
+    }
+
+    @PutMapping("/edit-with-photo/{id}")
+    fun editWithPhoto(@Valid alumno: Alumno,result: BindingResult ,
+                      @RequestParam archivo: MultipartFile,
+                      @PathVariable id: Long  ): ResponseEntity<Any>{
+        val optAlumno: Alumno = serviceAPI!!.getT(id) ?: return ResponseEntity.notFound().build()
+
+        optAlumno.apellido = alumno.apellido
+        optAlumno.nombre = alumno.nombre
+        optAlumno.email = alumno.email
+
+        if (!archivo.isEmpty) {
+            optAlumno.foto = archivo.bytes
+        }
+
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(serviceAPI!!.save(optAlumno))
     }
 }

@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m-cursos" />
+        <module name="m-respuestas" />
         <module name="m-zuul" />
+        <module name="c-examenes" />
         <module name="m-commons" />
         <module name="m-eureka" />
         <module name="m-examenes" />
@@ -17,10 +19,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="c-alumnos" target="11" />
+      <module name="c-examenes" target="11" />
       <module name="m-commons" target="11" />
       <module name="m-cursos" target="11" />
       <module name="m-eureka" target="1.8" />
       <module name="m-examenes" target="11" />
+      <module name="m-respuestas" target="11" />
       <module name="m-usuarios" target="1.8" />
       <module name="m-zuul" target="1.8" />
       <module name="microservicios-eureka" target="1.8" />
@@ -31,6 +35,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="c-alumnos" options="-parameters" />
+      <module name="c-examenes" options="-parameters" />
       <module name="m-commons" options="-parameters" />
       <module name="m-cursos" options="-parameters" />
       <module name="m-eureka" options="-parameters" />
