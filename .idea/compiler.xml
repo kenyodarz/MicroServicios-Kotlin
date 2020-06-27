@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m-cursos" />
-        <module name="m-respuestas" />
         <module name="m-zuul" />
-        <module name="c-examenes" />
+        <module name="m-respuestas" />
         <module name="m-commons" />
         <module name="m-eureka" />
         <module name="m-examenes" />
+        <module name="c-examenes" />
         <module name="m-usuarios" />
         <module name="c-alumnos" />
       </profile>
@@ -22,11 +22,11 @@
       <module name="c-examenes" target="11" />
       <module name="m-commons" target="11" />
       <module name="m-cursos" target="11" />
-      <module name="m-eureka" target="1.8" />
+      <module name="m-eureka" target="11" />
       <module name="m-examenes" target="11" />
       <module name="m-respuestas" target="11" />
-      <module name="m-usuarios" target="1.8" />
-      <module name="m-zuul" target="1.8" />
+      <module name="m-usuarios" target="11" />
+      <module name="m-zuul" target="11" />
       <module name="microservicios-eureka" target="1.8" />
       <module name="microservicios-usuarios" target="11" />
       <module name="microservicios-zuul" target="11" />
