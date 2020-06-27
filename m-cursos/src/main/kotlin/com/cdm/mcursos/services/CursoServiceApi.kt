@@ -5,5 +5,6 @@ import com.cdm.mcursos.models.Curso
 
 interface CursoServiceApi : GenericServiceAPI<Curso, Long> {
     fun findCursoByAlumnoId(id: Long): Curso
+    fun findExamenIdsConRespuestasByAlumnos(idAlumnos: Long):Iterable<Long>
 }
 

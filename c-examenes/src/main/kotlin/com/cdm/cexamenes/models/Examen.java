@@ -36,6 +36,9 @@ public class Examen {
     @NotNull
     private Asignatura asignatura;
 
+    @Transient
+    private boolean respondido;
+
     public Examen() {
         this.preguntas = new ArrayList<>();
     }
@@ -76,6 +79,14 @@ public class Examen {
     public Asignatura getAsignatura() { return asignatura; }
 
     public void setAsignatura(Asignatura asignatura) { this.asignatura = asignatura; }
+
+    public boolean isRespondido() {
+        return respondido;
+    }
+
+    public void setRespondido(boolean respondido) {
+        this.respondido = respondido;
+    }
 
     public void setPreguntas(List<Pregunta> preguntas) {
         this.preguntas.clear();

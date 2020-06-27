@@ -8,6 +8,7 @@ import com.cdm.mcursos.services.CursoServiceApi
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+import java.util.stream.Collectors.toList
 
 @RestController
 class CursoRestController: GenericRestController<Curso, Long, CursoServiceApi>() {
@@ -30,6 +31,15 @@ class CursoRestController: GenericRestController<Curso, Long, CursoServiceApi>()
     @GetMapping("/alumno/{id}")
     fun buscarAlumnoPorId(@PathVariable id:Long) : ResponseEntity<Any>{
         val curso: Curso = serviceAPI!!.findCursoByAlumnoId(id)
+        if(curso != null){
+            val examenesIds: MutableList<Long> = serviceAPI!!.findExamenIdsConRespuestasByAlumnos(id) as MutableList<Long>
+            curso.examenes!!.stream().map { examen: Examen ->
+                if (examenesIds.contains(examen.idExamen)) {
+                    examen.isRespondido = true
+                }
+                examen
+            }.collect(toList())
+        }
         return ResponseEntity.ok(curso)
     }
 

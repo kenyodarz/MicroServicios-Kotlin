@@ -1,6 +1,7 @@
 package com.cdm.mcursos.services;
 
 import com.cdm.mcommons.services.GenericServiceImp;
+import com.cdm.mcursos.include.RespuestaFeignClient;
 import com.cdm.mcursos.models.Curso;
 import com.cdm.mcursos.repositories.CursoRepository;
 import org.jetbrains.annotations.NotNull;
@@ -15,6 +16,9 @@ public class CursoServiceImpl extends GenericServiceImp<Curso, Long> implements 
     @Autowired
     private CursoRepository repository;
 
+    @Autowired
+    private RespuestaFeignClient client;
+
     @NotNull
     @Override
     public JpaRepository<Curso, Long> getRepository() {
@@ -26,5 +30,11 @@ public class CursoServiceImpl extends GenericServiceImp<Curso, Long> implements 
     @Transactional (readOnly = true)
     public Curso findCursoByAlumnoId(long id) {
         return repository.findCursoByAlumnoId(id);
+    }
+
+    @NotNull
+    @Override
+    public Iterable<Long> findExamenIdsConRespuestasByAlumnos(long idAlumnos) {
+        return client.findExamenIdsConRespuestasByAlumnos(idAlumnos);
     }
 }
