@@ -28,7 +28,6 @@ open class GenericRestController<T, ID: Serializable, S : GenericServiceAPI<T,ID
     @PostMapping("/save")
     fun save(@Valid @RequestBody entity : T, result: BindingResult): ResponseEntity<Any> {
         if(result.hasErrors()) return this.validar(result)
-        val obj = serviceAPI!!.save(entity)
         return ResponseEntity.status(HttpStatus.CREATED).body(serviceAPI!!.save(entity))
     }
 
