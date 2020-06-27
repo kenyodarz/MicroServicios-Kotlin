@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m-cursos" />
+        <module name="m-gateway" />
         <module name="m-zuul" />
         <module name="m-respuestas" />
         <module name="m-commons" />
@@ -24,6 +25,7 @@
       <module name="m-cursos" target="11" />
       <module name="m-eureka" target="11" />
       <module name="m-examenes" target="11" />
+      <module name="m-gateway" target="11" />
       <module name="m-respuestas" target="11" />
       <module name="m-usuarios" target="11" />
       <module name="m-zuul" target="11" />
@@ -40,6 +42,7 @@
       <module name="m-cursos" options="-parameters" />
       <module name="m-eureka" options="-parameters" />
       <module name="m-examenes" options="-parameters" />
+      <module name="m-gateway" options="-parameters" />
       <module name="m-respuestas" options="-parameters" />
       <module name="m-usuarios" options="-parameters" />
       <module name="m-zuul" options="-parameters" />

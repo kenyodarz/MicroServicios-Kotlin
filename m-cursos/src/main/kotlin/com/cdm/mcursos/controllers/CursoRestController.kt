@@ -5,10 +5,13 @@ import com.cdm.cexamenes.models.Examen
 import com.cdm.mcommons.controllers.GenericRestController
 import com.cdm.mcursos.models.Curso
 import com.cdm.mcursos.services.CursoServiceApi
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+import java.util.*
 import java.util.stream.Collectors.toList
+
 
 @RestController
 class CursoRestController: GenericRestController<Curso, Long, CursoServiceApi>() {
@@ -57,4 +60,15 @@ class CursoRestController: GenericRestController<Curso, Long, CursoServiceApi>()
         curso.removeExamen(examen)
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(serviceAPI!!.save(curso))
     }
+
+    @GetMapping("/balanceador-test")
+    fun balanceadorTest(): ResponseEntity<*>{
+        val response: MutableMap<String, Any> = HashMap()
+        response["balanceador"] = balanceadorTest!!
+        response["cursos"] = serviceAPI!!.getAll()
+       return ResponseEntity.ok(response)
+    }
+
+    @Value("config.balanceador.test")
+    private var balanceadorTest: String? = null
 }

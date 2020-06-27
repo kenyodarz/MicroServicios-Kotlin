@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/m-cursos/m-cursos.iml" filepath="$PROJECT_DIR$/m-cursos/m-cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-eureka/m-eureka.iml" filepath="$PROJECT_DIR$/m-eureka/m-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-examenes/m-examenes.iml" filepath="$PROJECT_DIR$/m-examenes/m-examenes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m-gateway/m-gateway.iml" filepath="$PROJECT_DIR$/m-gateway/m-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-respuestas/m-respuestas.iml" filepath="$PROJECT_DIR$/m-respuestas/m-respuestas.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-usuarios/m-usuarios.iml" filepath="$PROJECT_DIR$/m-usuarios/m-usuarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/m-zuul/m-zuul.iml" filepath="$PROJECT_DIR$/m-zuul/m-zuul.iml" />
